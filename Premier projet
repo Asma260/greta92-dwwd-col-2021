@@ -1,0 +1,606 @@
+[33mcommit 1fc7021c033d993d3dc60f972baee8a37e4027c1[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: root <asmabaklouti.kh@gmail.com>
+Date:   Tue Nov 10 16:40:00 2020 +0100
+
+    Premier projet
+
+[1mdiff --git a/cp2/css/main.css b/cp2/css/main.css[m
+[1mnew file mode 100644[m
+[1mindex 0000000..328dbc6[m
+[1m--- /dev/null[m
+[1m+++ b/cp2/css/main.css[m
+[36m@@ -0,0 +1,65 @@[m
+[32m+[m[32m@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');[m
+[32m+[m[32mhtml, body {[m
+[32m+[m[32m    width: 100%;[m
+[32m+[m[32m    height: 100%;[m
+[32m+[m[32m}[m
+[32m+[m[32m* {[m
+[32m+[m[32m    margin: 0;[m
+[32m+[m[32m}[m
+[32m+[m[32mbody {[m
+[32m+[m[32m    font-family: Verdana, Geneva, Tahoma, sans-serif;[m
+[32m+[m[32m    background-image: url(../pics/lotus.jpg);[m
+[32m+[m[32m    background-size: cover;[m
+[32m+[m[32m}[m
+[32m+[m[32m/* WRAPPER*/[m
+[32m+[m[32m#wrapper {[m
+[32m+[m[32m    background-color: rgba(255,255,255,0.5);[m
+[32m+[m[32m    height: 100%;[m
+[32m+[m[32m}[m
+[32m+[m[32m#wrapper>* {[m
+[32m+[m[32m    margin: 0 0 2rem 0;[m
+[32m+[m[32m}[m
+[32m+[m[32m/*EN-TETE INDEX*/[m
+[32m+[m[32m#myheader {[m
+[32m+[m[32m    display:flex[m
+[32m+[m[32m}[m
+[32m+[m[32m#myheader>div {[m
+[32m+[m[32m    text-align: center;[m
+[32m+[m[32m}[m
+[32m+[m[32m#logo {[m
+[32m+[m[32m    width: 20%;[m
+[32m+[m[32m}[m
+[32m+[m[32m#name {[m
+[32m+[m[32m    width: 80%;[m
+[32m+[m
+[32m+[m[32m}[m
+[32m+[m[32m#name h1 {[m
+[32m+[m[32m    height: 5rem;[m
+[32m+[m[32m    line-height: 5rem;[m
+[32m+[m[32m}[m
+[32m+[m[32m#logo img {[m
+[32m+[m[32m    width: 5rem;[m
+[32m+[m[32m}[m
+[32m+[m[32m/* MENU */[m
+[32m+[m[32m#menu .items {[m
+[32m+[m[32m    list-style-type: none;[m
+[32m+[m[32m    padding: 0;[m
+[32m+[m[32m    display: flex;[m
+[32m+[m[32m    flex-wrap: wrap;[m
+[32m+[m[32m    justify-content: space-around;[m
+[32m+[m[32m}[m
+[32m+[m[32m#menu .items a {[m
+[32m+[m[32m    text-decoration: none;[m
+[32m+[m[32m    border: maroon groove .25rem;[m
+[32m+[m[32m    color: maroon;[m
+[32m+[m[32m    background-color: cornsilk;[m
+[32m+[m[32m    box-shadow: 0 0 1rem;[m
+[32m+[m[32m    padding: .5rem;[m
+[32m+[m[32m    transition: all .3s ease-in-out;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m#menu .items a:hover {[m
+[32m+[m[32m    border: cornsilk groove .25rem;[m
+[32m+[m[32m    color: cornsilk;[m
+[32m+[m[32m    background-color: maroon;[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/cp2/css/style.css b/cp2/css/style.css[m
+[1mnew file mode 100644[m
+[1mindex 0000000..4598547[m
+[1m--- /dev/null[m
+[1m+++ b/cp2/css/style.css[m
+[36m@@ -0,0 +1,84 @@[m
+[32m+[m[32m@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');[m
+[32m+[m
+[32m+[m
+[32m+[m[32mbody {[m
+[32m+[m[32m    font-family: Verdana, Geneva, Tahoma, sans-serif;[m
+[32m+[m[32m    background-color: bisque;[m
+[32m+[m[32m    background: linear-gradient(to right, bisque,pink, purple);[m
+[32m+[m[32m    background: radial-gradient(bisque, white, cornsilk);[m
+[32m+[m[32m    background:  url(../pics/sun.png) no-repeat top right , url(../pics/unnamed.png) no-repeat bottom right, radial-gradient(bisque, cornsilk, white);[m
+[32m+[m[32m    margin-bottom: 5px;[m
+[32m+[m[32m}[m
+[32m+[m[32mh1,h2,h3,h4 {[m
+[32m+[m[32m    font-family: 'josefin sans', sans-serif;[m
+[32m+[m[32m}[m
+[32m+[m[32mh1 {[m
+[32m+[m
+[32m+[m[32m    color: rgb(255,0,0);[m[41m    [m
+[32m+[m[32m}[m
+[32m+[m[32m#top {[m
+[32m+[m[32m    text-shadow: 0 0 10px maroon;[m
+[32m+[m[32m}[m
+[32m+[m[32mpre {[m
+[32m+[m[32m    color: rgb(0,0,255)[m
+[32m+[m[32m}[m
+[32m+[m[32mpre {[m
+[32m+[m[32m    color: blue;[m
+[32m+[m[32m    border-left: blue 2px solid;[m
+[32m+[m[32m    margin-left: 20px;[m
+[32m+[m[32m    padding-left: 10px;[m[41m   [m
+[32m+[m[32m}[m
+[32m+[m[32mdt{[m
+[32m+[m[32m    font-weight: bold;[m
+[32m+[m[32m    text-transform: uppercase;[m
+[32m+[m[32m    margin: .5rem 0;[m
+[32m+[m[32m}[m
+[32m+[m[32mdd, p{[m
+[32m+[m[32m    text-align: justify;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mfigure img {[m
+[32m+[m[32m    border-radius:50%;[m
+[32m+[m[32m    border-radius: 2em 3em 4em 5em;[m
+[32m+[m[32m    border-radius: 50% 30% / 10% 40%;[m
+[32m+[m[32m    margin-bottom: 10px;[m
+[32m+[m[32m    box-shadow: 5px 5px 7.5px black, -5px -5px 7.5px gray;[m
+[32m+[m[32m}[m
+[32m+[m[32mtable {[m
+[32m+[m[32m    width: 100%;[m
+[32m+[m[32m}[m
+[32m+[m[32mtable, th, td {[m
+[32m+[m[32m    border: black solid 1px;[m
+[32m+[m[32m}[m
+[32m+[m[32mtbody tr:nth-child(even) {[m
+[32m+[m[32m    background-color: #ddd;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mtbody tr:hover {[m
+[32m+[m[32m    background-color: gold;[m
+[32m+[m[32m    cursor: pointer;[m
+[32m+[m[32m}[m
+[32m+[m[32mthead , tfoot {[m
+[32m+[m[32m    background-color: darkgrey;[m
+[32m+[m[32m    color: white[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32m/*tbody tr td:last-child {[m
+[32m+[m[32m    text-align: right;[m
+[32m+[m[32m}[m
+[32m+[m[32mtbody tr td:nth-child(2) {[m
+[32m+[m[32m    text-align: center;[m
+[32m+[m[32m}*/[m
+[32m+[m[32mtable:first-of-type td:last-child {[m
+[32m+[m[32m    text-align: right;[m
+[32m+[m[32m}[m
+[32m+[m[32mtbody tr td:nth-child(2) {[m
+[32m+[m[32m    text-align: center;[m
+[32m+[m[32m}[m
+[32m+[m
+[32m+[m[32mol ol  {[m
+[32m+[m[32m    list-style-type: lower-roman;[m
+[32m+[m[32m}[m
+[32m+[m[32mul {[m
+[32m+[m[32m    list-style-image: url(../pics/bluebullet-small.png);[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/cp2/index.html b/cp2/index.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..a601dbc[m
+[1m--- /dev/null[m
+[1m+++ b/cp2/index.html[m
+[36m@@ -0,0 +1,26 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="fr">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m    <title>Darons Codeurs : Portail</title>[m
+[32m+[m[32m    <link rel="stylesheet" href="css/main.css"[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m[32m   <main id="wrapper">[m
+[32m+[m[32m       <header id="myheader">[m
+[32m+[m[32m           <div id="logo"><img src="pics/logo.svg" alt="logo darons codeur"></div>[m
+[32m+[m[32m           <div id="name>"><h1>Les Darons Codeurs</h1></div>[m
+[32m+[m[32m           </header>[m
+[32m+[m[32m           <nav id="menu">[m
+[32m+[m[32m               <ul class="items">[m
+[32m+[m[32m                   <li><a href="team.html">Notre équipe</a></li>[m
+[32m+[m[32m                   <li><a href="register.html">Inscription</a></li>[m
+[32m+[m[32m                   <li><a href="position.html">Réalisations</a></li>[m
+[32m+[m[32m                   <li><a href="bootstrap.html">Notre blog</a></li>[m
+[32m+[m[32m                   <li><a href="https://developer.mozilla.org/fr/">Documentation</a></li>[m
+[32m+[m[32m               </ul>[m
+[32m+[m[32m           </nav>[m[41m  [m
+[32m+[m[32m   </main>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
+[1mdiff --git a/cp2/pics/Flag_of_France.svg b/cp2/pics/Flag_of_France.svg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b50bd7e[m
+[1m--- /dev/null[m
+[1m+++ b/cp2/pics/Flag_of_France.svg[m
+[36m@@ -0,0 +1,2 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600"><rect width="900" height="600" fill="#ED2939"/><rect width="600" height="600" fill="#fff"/><rect width="300" height="600" fill="#002395"/></svg>[m
+\ No newline at end of file[m
+[1mdiff --git a/cp2/pics/bluebullet-small.png b/cp2/pics/bluebullet-small.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..7197b25[m
+Binary files /dev/null and b/cp2/pics/bluebullet-small.png differ
+[1mdiff --git a/cp2/pics/fontaine.png b/cp2/pics/fontaine.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e1182ea[m
+Binary files /dev/null and b/cp2/pics/fontaine.png differ
+[1mdiff --git a/cp2/pics/logo.svg b/cp2/pics/logo.svg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..2e43ef9[m
+[1m--- /dev/null[m
+[1m+++ b/cp2/pics/logo.svg[m
+[36m@@ -0,0 +1,16 @@[m
+[32m+[m[32m<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">[m
+[32m+[m[32m <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->[m
+[32m+[m[32m <g>[m
+[32m+[m[32m  <title>background</title>[m
+[32m+[m[32m  <rect fill="none" id="canvas_background" height="602" width="802" y="-1" x="-1"/>[m
+[32m+[m[32m  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">[m
+[32m+[m[32m   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>[m
+[32m+[m[32m  </g>[m
+[32m+[m[32m </g>[m
+[32m+[m[32m <g>[m
+[32m+[m[32m  <title>Layer 1</title>[m
+[32m+[m[32m  <ellipse ry="129.24888" rx="129.24888" id="svg_1" cy="283.24754" cx="394.50005" stroke-width="1.5" stroke="#000" fill="#BF7E96"/>[m
+[32m+[m[32m  <path id="svg_3" d="m300.74461,288.3498l66.34136,0l20.49999,-63.02402l20.5,63.02402l66.34135,0l-53.67119,38.95054l20.50105,63.02402l-53.67121,-38.9516l-53.6712,38.9516l20.50106,-63.02402l-53.67121,-38.95054z" stroke-width="1.5" stroke="#000" fill="#FFAFCC"/>[m
+[32m+[m[32m  <text xml:space="preserve" text-anchor="start" font-family="Euphoria, sans-serif" font-size="24" id="svg_4" y="314.99726" x="379.25018" stroke-width="0" stroke="#000" fill="#000000">dc</text>[m
+[32m+[m[32m </g>[m
+[32m+[m[32m</svg>[m
+\ No newline at end of file[m
+[1mdiff --git a/cp2/pics/lotus.jpg b/cp2/pics/lotus.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..a5b5269[m
+Binary files /dev/null and b/cp2/pics/lotus.jpg differ
+[1mdiff --git a/cp2/pics/sun.png b/cp2/pics/sun.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..741547f[m
+Binary files /dev/null and b/cp2/pics/sun.png differ
+[1mdiff --git a/cp2/pics/unnamed.png b/cp2/pics/unnamed.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..a610e42[m
+Binary files /dev/null and b/cp2/pics/unnamed.png differ
+[1mdiff --git a/cp2/positions.html b/cp2/positions.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..3d6cf6c[m
+[1m--- /dev/null[m
+[1m+++ b/cp2/positions.html[m
+[36m@@ -0,0 +1,110 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="en">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m    <meta charset="UTF-8">[m
+[32m+[m[32m    <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m    <title>Document</title>[m
+[32m+[m[32m    <style>[m
+[32m+[m[32m        div[id^=div] {[m
+[32m+[m[32m            width: 300px;[m
+[32m+[m[32m            height: 300px;[m
+[32m+[m[32m            border: solid black 3px;[m
+[32m+[m[32m            margin: 10px;[m
+[32m+[m[32m            padding: 10px;[m
+[32m+[m[32m        }[m
+[32m+[m[32m        #div1 {[m
+[32m+[m[32m            position: relative;[m
+[32m+[m[32m            background-color:purple;[m
+[32m+[m
+[32m+[m[32m        }[m
+[32m+[m[32m        #div1>.box {[m
+[32m+[m[32m            position: absolute;[m
+[32m+[m[32m            bottom: 0;[m
+[32m+[m[32m            right: 0;[m
+[32m+[m[32m        }[m
+[32m+[m[32m        #div2 {[m
+[32m+[m[32m            background-color:pink;[m
+[32m+[m[32m            position: relative;[m
+[32m+[m[32m            top: 100px;[m
+[32m+[m[32m            left: 100px;[m
+[32m+[m[32m            left: ;[m
+[32m+[m[32m            overflow: auto;[m
+[32m+[m[32m        }[m
+[32m+[m[32m        #div2>* {[m
+[32m+[m[32m           /* display: inline-block */[m
+[32m+[m[32m           float: left;[m
+[32m+[m
+[32m+[m[32m        }[m
+[32m+[m[32m        #div3 {[m
+[32m+[m[32m            background-color: blue;[m
+[32m+[m[32m            position: fixed;[m
+[32m+[m[32m            top: 0;[m
+[32m+[m[32m            right: 0;[m
+[32m+[m[32m        }[m
+[32m+[m[32m        .box {[m
+[32m+[m[32m            width: 50px;[m
+[32m+[m[32m            height: 50px;[m
+[32m+[m[32m            border: black dotted 1px;[m
+[32m+[m[32m            border-radius: 25px;[m
+[32m+[m[32m            background-color: yellow;[m
+[32m+[m[32m            margin: 5px;[m
+[32m+[m[32m        }[m
+[32m+[m[32m    </style>[m
+[32m+[m[41m    [m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m[32m    <div id="div1">[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m    </div>[m
+[32m+[m[32m    <div id="div2">[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[32m        <div class="box"></div>[m
+[32m+[m[41m        [m
+[32m+[m[32m         </div>[m
+[32m+[m[32m    <div id="div3"></div>[m
+\ No newline at end of file[m
+[1mdiff --git a/cp2/team.html b/cp2/team.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..49180e0[m
+[1m--- /dev/null[m
+[1m+++ b/cp2/team.html[m
+[36m@@ -0,0 +1,228 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="fr">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m<meta charset="utf-8">[m
+[32m+[m[32m<title>Darons Codeurs : Présentation</title>[m
+[32m+[m[32m<meta name="description" content="jeune startup dévloppeurs full-stack colombes 92">[m
+[32m+[m[32m<meta name="author" content="Asma KHAMMOUMA">[m
+[32m+[m[32m<link rel="stylesheet" href="css/style.css">[m
+[32m+[m[32m</head>[m
+[32m+[m[32m<body>[m
+[32m+[m[32m    <!-- Début du document -->[m
+[32m+[m[32m    <h1 id="top">Les Darons Codeurs</h1>[m
+[32m+[m[32m    <p>Nous sommes une jeune startup basée dans la jolie commune de Colombes. Notre équipe est constituée de dévloppeurs aguéris avec au moins 6 ans d'experience dans le métier du digital.[m
+[32m+[m[32m        <br>[m
+[32m+[m[32m        Nous attendons vos demandes avec impatience ![m
+[32m+[m[32m    </p>[m
+[32m+[m[32m    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quod sunt consectetur repellendus molestias quidem cupiditate eos, perferendis asperiores iste quam at vel modi molestiae laudantium. Suscipit facilis quia vel.</p>[m
+[32m+[m[32m    <hr>[m
+[32m+[m[32m    <blockquote cite="https://www.google.com/search?channel=fs&client=ubuntu&q=Un+tien+vaut+mieux+que+deux+tu+l%27auras"><p>Un tien vaut mieux que deux tu l'auras</p><footer>Jean de La Fontaine, <cite>Le Petit Poisson et le Pécheur</cite></footer></blockquote>[m
+[32m+[m[32m    <figure>[m
+[32m+[m[32m        <img src="pics/fontaine.png" alt="jean de la fontaine">[m
+[32m+[m[32m        <figcaption>Le renard et le Bouc</figcaption>[m
+[32m+[m[32m    </figure>[m
+[32m+[m[32m    <pre>[m
+[32m+[m[32mHistorique de la société :[m
+[32m+[m[32m-----------------------------------------[m
+[32m+[m[32mfin 2019    Dépot des statuts[m
+[32m+[m[32mmi 2020     Confinement[m
+[32m+[m[32moct 2020    Lancement de la stucture[m
+[32m+[m[32mjan 2021    objectif = 200 000 &euro;[m[41m     [m
+[32m+[m[32m    </pre>[m
+[32m+[m[32m    <h2>Présentation</h2>[m
+[32m+[m[32m    <dl>[m
+[32m+[m[32m        <dt>Graphisme</dt>[m
+[32m+[m[32m        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nemo expedita velit fuga deleniti assumenda voluptatum, et excepturi quod blanditiis vitae sapiente, non iusto, dolor rem? Quaerat numquam aspernatur sapiente.</dd>[m
+[32m+[m[32m        <dt>Développement</dt>[m
+[32m+[m[32m        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quos nemo earum harum at delectus doloribus saepe! Quos qui tempora, veritatis cumque eum a aliquam voluptates odio ipsa doloremque sapiente.</dd>[m
+[32m+[m[32m        <dt>Maintenance</dt>[m
+[32m+[m[32m        <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, quaerat dolor. Omnis, repudiandae deleniti! Labore officia vero repellendus optio rerum dolore, quisquam ipsa eos ut esse. Atque voluptas corporis velit.</dd>[m
+[32m+[m[32m    </dl>[m
+[32m+[m[32m    <details>[m
+[32m+[m[32m        <summary>En savoir plus...</summary>[m
+[32m+[m[32m        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita minus culpa necessitatibus voluptatem, alias perferendis, velit numquam eligendi quas beatae est vitae perspiciatis iste sequi libero, sed modi non atque!</p>[m
+[32m+[m[32m    </details>[m
+[32m+[m[32m    <h2>Services</h2>[m
+[32m+[m[32m    <ol>[m
+[32m+[m[32m        <li>Graphisme[m
+[32m+[m[32m            <ol>[m
+[32m+[m[32m                <li>3 Dessinateurs <ul>[m
+[32m+[m[32m                    <li>Photoshop</li>[m
+[32m+[m[32m                    <li>Illustractor</li>[m
+[32m+[m[32m                 </ul>[m
+[32m+[m[32m                </li>[m
+[32m+[m[32m                <li>1 ergonome</li>[m
+[32m+[m[32m                <li>1 photographe</li>[m
+[32m+[m[32m            </ol>[m
+[32m+[m[32m        </li>[m
+[32m+[m[32m        <li>Dévloppement</li>[m
+[32m+[m[32m        <li>Maintenance</li>[m
+[32m+[m[32m    </ol>[m
+[32m+[m[32m    <p>Et bientot (mars 2021) les services suivant :</p>[m
+[32m+[m[32m    <ol start="5" reversed>[m
+[32m+[m[32m        <li>Comptabilité</li>[m
+[32m+[m[32m        <li>Sites clé en main "Click-and-collect</li>[m
+[32m+[m[32m    </ol>[m
+[32m+[m[32m    <h2>Equipe</h2>[m
+[32m+[m[32m    <p>Notre equipe est constituée de garcons et de filles<sup>1</sup> dont l'expérience en <em>dévloppement web</em> et en <strong>conseil digital</strong> n'est plus à faire. Tou.te.s ont suivi leurs cours dans la prestigieuse école Garamont et ont obtenu leur titre <abbr title="Dévloppeur Web et Web mobile">DWWM</abbr>. Notre credo : <mark>"Quand on veut, on peut.</mark></p>[m
+[32m+[m[32m    <p>Venez nous rencontrer lors de notre prochaine convention de New York, le <time datetime="2021-02-14T20:30:00-06:00">14 février 2021 à 20:30</time></p>[m
+[32m+[m[32m    <h3>Dévloppeurs</h3>[m
+[32m+[m[32m    <table>[m
+[32m+[m[32m        <caption>Tableau 1 : Nos dévloppeurs</caption>[m
+[32m+[m[32m        <thead>[m
+[32m+[m[32m            <tr>[m
+[32m+[m[32m                <th>Prénom</th>[m
+[32m+[m[32m                <th>Competences</th>[m
+[32m+[m[32m                <th>Experience</th>[m
+[32m+[m[32m            </tr>[m
+[32m+[m[32m            <tr>[m
+[32m+[m[32m            </thead>[m
+[32m+[m[32m            <tbody>[m
+[32m+[m[32m                <td>kevin</td>[m
+[32m+[m[32m                <td>HTML, CSS, JS, PHP, Mysql</td>[m
+[32m+[m[32m                <td>3 ans</td>[m
+[32m+[m[32m            </tr>[m
+[32m+[m[32m            <tr>[m
+[32m+[m[32m            <td>Hakim</td>[m
+[32m+[m[32m            <td>Java 2EE, Scrum, UML</td>[m
+[32m+[m[32m            <td>2 ans</td>[m
+[32m+[m[32m            </tr>[m
+[32m+[m[32m            <tr>[m
+[32m+[m[32m                <td>MOHAMED</td>[m
+[32m+[m[32m                <td>PrestaShop, C#, .NET</td>[m
+[32m+[m[32m                <td>5 ans</td>[m
+[32m+[m[32m            </tr>[m
+[32m+[m[32m        </thead>[m
+[32m+[m[32m        <tbody>[m
+[32m+[m[32m            <tr>[m
+[32m+[m[32m                <td>Jérémy</td>[m
+[32m+[m[32m                <td>Python, Electronique</td>[m
+[32m+[m[32m                <td>5 ans</td>[m
+[32m+[m[32m            </tr>[m
+[32m+[m[32m        </tbody>[m
+[32m+[m[32m        <tfoot>[m
+[32m+[m[32m            <tr>[m
+[32m+[m[32m                <th colspan="2"></th>[m
+[32m+[m[32m                <th>15 ans</th>[m
+[32m+[m[32m            </tr>[m
+[32m+[m[32m        </tfoot>[m
+[32m+[m[32m    </table>[m
+[32m+[m[32m    <h3>Commerciaux</h3>[m
+[32m+[m[32m    <h4>Europe</h4>[m
+[32m+[m[32m    <table>[m
+[32m+[m[32m        <caption>Tableau 2 : Nos commerciaux en Europe</caption>[m
+[32m+[m[32m        <thead>[m
+[32m+[m[32m            <tr>[m
+[32m+[m[32m                <th>Prénom</th>[m
+[32m+[m[32m                <th>Zone</th>[m
+[32m+[m[32m                <th>CA (k€)</th>[m
+[32m+[m[32m            </tr>[m
+[32m+[m[32m        </thead>[m
+[32m+[m[32m        <tbody>[m
+[32m+[m[32m            <tr>[m
+[32m+[m[32m                <td>Samir</td>[m
+[32m+[m[32m                <td>Scandinavie, Allmagne</td>[m
+[32m+[m[32m                <td>25</td>[m
+[32m+[m[32m            </tr>[m
+[32m+[m[32m            <tr>[m
+[32m+[m[32m                <td>Jean-Marc</td>[m
+[32m+[m[32m                <td>Espagne, Portugal</td>[m
+[32m+[m[32m                <td>22.8</td>[m
+[32m+[m[32m            </tr>[m
+[32m+[m[32m                <tr>[m
+[32m+[m[32m                    <td>Asma</td>[m
+[32m+[m[32m                    <td>Roumanie, Hongrie, Croatie</td>[m
+[32m+[m[32m                    <td>17.9</td>[m
+[32m+[m[32m            </tr>[m
+[32m+[m[32m        </tbody>[m
+[32m+[m[32m        <tfoot>[m
+[32m+[m[32m            <tr>[m
+[32m+[m[32m                <th colspan="2">TOTAL</th>[m
+[32m+[m[32m            <th contenteditable="true">à calculer</th>[m
+[32m+[m[32m            </tr>[m
+[32m+[m[32m        </tfoot>[m
+[32m+[m[32m    </table>[m
+[32m+[m[32m    <h4>Asie</h4>[m
+[32m+[m[32m    <table>[m
+[32m+[m[32m        <caption>Tableau 2 : Nos commerciaux en Asie</caption>[m
+[32m+[m[32m        <thead>[m
+[32m+[m[32m            <tr>[m
+[32m+[m[32m                <th>Prénom</th>[m
+[32m+[m[32m                <th>Zone</th>[m
+[32m+[m[32m                <th>CA (k€)</th>[m
+[32m+[m[32m            </tr>[m
+[32m+[m[32m        </thead>[m
+[32m+[m[32m        <tbody>[m
+[32m+[m[32m            <tr>[m
+[32m+[m[32m                <td>Rémy</td>[m
+[32m+[m[32m                <td>Indonésie</td>[m
+[32m+[m[32m                <td>15.6</td>[m
+[32m+[m[32m            </tr>[m
+[32m+[m[32m            <tr>[m
+[32m+[m[32m                <td>Oihid</td>[m
+[32m+[m[32m                <td>Thailande</td>[m
+[32m+[m[32m                <td>12.6</td>[m
+[32m+[m[32m            </tr>[m
+[32m+[m[32m            <tr>[m
+[32m+[m[32m                    <td>Thomas</td>[m
+[32m+[m[32m                    <td>Japon</td>[m
+[32m+[m[32m                    <td>30</td>[m
+[32m+[m[32m                </tr>[m
+[32m+[m[32m                <tr>[m
+[32m+[m[32m                    <td>Emma</td>[m
+[32m+[m[32m                    <td>Chine, Corée du Nord</td>[m
+[32m+[m[32m                    <td>42.3</td>[m
+[32m+[m[32m                </tr>[m
+[32m+[m[32m        </tbody>[m
+[32m+[m[32m        <tfoot>[m
+[32m+[m[32m            <tr>[m
+[32m+[m[32m                <th colspan="2">TOTAL</th>[m
+[32m+[m[32m            <th contenteditable="true">à calculer</th>[m
+[32m+[m[32m            </tr>[m
+[32m+[m[32m        </tfoot>[m
+[32m+[m[32m    </table>[m
+[32m+[m[32m    <h3>Graphistes</h3>[m
+[32m+[m[32m    <table>[m
+[32m+[m[32m        <caption> Tableau 4 : Nos graphiste  </caption>[m
+[32m+[m[32m        <thead>[m
+[32m+[m[32m            <tr>[m
+[32m+[m[32m                <th colspan="3">Graphistes certifié Adobe</th>[m
+[32m+[m[32m            </tr>[m
+[32m+[m[32m            <tr>[m
+[32m+[m[32m                <th>Prénom</th>[m
+[32m+[m[32m                <th>Compétences</th>[m
+[32m+[m[32m                <th>Experiences</th>[m
+[32m+[m[32m            </tr>[m
+[32m+[m[32m        </thead>[m
+[32m+[m[32m        <tbody>[m
+[32m+[m[32m            <tr>[m
+[32m+[m[32m                <td>Alex</td>[m
+[32m+[m[32m                <td>photoshop et Gimp</td>[m
+[32m+[m[32m                <td>3 ans</td>[m
+[32m+[m[32m            </tr>[m
+[32m+[m[32m            <tr>[m
+[32m+[m[32m                <td>Aymen</td>[m
+[32m+[m[32m                <td>Premiere</td>[m
+[32m+[m[32m                <td>2 ans</td>[m
+[32m+[m[32m            </tr>[m
+[32m+[m[32m            <tr>[m
+[32m+[m[32m                <td>Lesly</td>[m
+[32m+[m[32m                <td>Paint.NET et Paintbrush</td>[m
+[32m+[m[32m                <td>11 ans</td>[m
+[32m+[m[32m            </tr>[m
+[32m+[m[32m        </tbody>[m
+[32m+[m[32m        <tfoot>[m
+[32m+[m[32m            <tr>[m
+[32m+[m[32m                <th colspan="2">TOTAL</th>[m
+[32m+[m[32m                <th>18 ans</th>[m
+[32m+[m[32m            </tr>[m
+[32m+[m[32m        </tfoot>[m
+[32m+[m[32m    </table>[m
+[32m+[m[32m    <h2>Localisation</h2>[m
+[32m+[m[32m    <div><a href="#top">Début de page</a> | <a href="https://www.google.fr" target="_blank">Google</a> | <a href="mailto:oihid.remy@asma.org?subject=infos&body=hello%20world!">Nous écrire</a> | <a href="http://docshare03.docshare.tips/files/25359/253596090.pdf">momento HTML5</a></div>[m
+[32m+[m[32m    <hr>[m
+[32m+[m[32m    <p>[m
+[32m+[m[32m        <small>1 : La parité n'est malheureusement pas respectée</small>[m
+[32m+[m[32m    </p>[m
+[32m+[m[32m</body>[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
